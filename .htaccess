@@ -1,0 +1,15 @@
+# Lindungi file sensitif dari akses langsung lewat browser.
+# (Section I - deployment: jangan sampai file SQL/konfigurasi/dokumentasi bisa diunduh publik.)
+<FilesMatch "\.(sql|md|txt|log|env)$">
+    Require all denied
+</FilesMatch>
+
+# Nonaktifkan directory listing.
+Options -Indexes
+
+# Header keamanan dasar (aman diaktifkan tanpa mengubah perilaku aplikasi).
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

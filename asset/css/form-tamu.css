@@ -1,0 +1,254 @@
+/* ===== HALAMAN FORM CHECK-IN TAMU ===== */
+
+.form-tamu-page {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8px 0 28px;
+    color: #343a34;
+}
+
+.form-tamu-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.form-tamu-eyebrow {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #8c8b7b;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.form-tamu-heading h4 {
+    margin: 0;
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.form-tamu-heading p {
+    margin: 7px 0 0;
+    color: #85877f;
+    font-size: 14px;
+}
+
+/* Kartu form */
+
+.form-tamu-card {
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #e9e7df;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(39, 43, 35, 0.05);
+}
+
+.form-tamu-card-header {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 20px 24px;
+    border-bottom: 1px solid #eeece5;
+}
+
+.form-tamu-icon {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    color: #394136;
+    background: #f0f1e9;
+    border-radius: 10px;
+    font-size: 21px;
+}
+
+.form-tamu-card-header h5 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.form-tamu-card-header p {
+    margin: 5px 0 0;
+    color: #85877f;
+    font-size: 13px;
+}
+
+.form-tamu-card-body {
+    padding: 24px;
+}
+
+/* Grid input */
+
+.form-tamu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 24px;
+}
+
+.form-tamu-field {
+    min-width: 0;
+}
+
+.form-tamu-field label {
+    display: block;
+    margin-bottom: 8px;
+    color: #363b35;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-tamu-field label span {
+    color: #dc3545;
+}
+
+.form-tamu-field .form-control,
+.form-tamu-field .form-select {
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 13px;
+    color: #343a34;
+    background-color: #fff;
+    border: 1px solid #deded4;
+    border-radius: 7px;
+    font-size: 14px;
+    box-shadow: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-tamu-field textarea.form-control {
+    min-height: 95px;
+    resize: vertical;
+}
+
+.form-tamu-field .form-control::placeholder {
+    color: #aaa99f;
+    opacity: 1;
+}
+
+.form-tamu-field .form-control:focus,
+.form-tamu-field .form-select:focus {
+    border-color: #858c76;
+    box-shadow: 0 0 0 3px rgba(91, 103, 78, 0.12);
+    outline: none;
+}
+
+.form-tamu-field small {
+    display: block;
+    margin-top: 7px;
+    color: #85877f;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.form-tamu-full {
+    grid-column: 1 / -1;
+}
+
+/* Tombol */
+
+.form-tamu-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eeece5;
+}
+
+.form-tamu-actions .btn {
+    min-height: 42px;
+    padding: 10px 17px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-tamu-actions .btn-dark {
+    background-color: #343b32;
+    border-color: #343b32;
+}
+
+.form-tamu-actions .btn-dark:hover {
+    background-color: #252b24;
+    border-color: #252b24;
+}
+
+.form-tamu-actions .btn-outline-secondary {
+    color: #60665e;
+    border-color: #d7d8d0;
+}
+
+.form-tamu-actions .btn-outline-secondary:hover {
+    color: #343a34;
+    background: #f4f4ef;
+}
+
+/* Pesan */
+
+.form-tamu-page .alert {
+    margin-bottom: 18px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* Tablet dan HP */
+
+@media (max-width: 768px) {
+    .form-tamu-page {
+        padding-top: 4px;
+    }
+
+    .form-tamu-heading {
+        margin-bottom: 17px;
+    }
+
+    .form-tamu-heading h4 {
+        font-size: 23px;
+    }
+
+    .form-tamu-card-header {
+        padding: 16px;
+    }
+
+    .form-tamu-card-body {
+        padding: 17px;
+    }
+
+    .form-tamu-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .form-tamu-full {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-tamu-heading h4 {
+        font-size: 21px;
+    }
+
+    .form-tamu-heading p {
+        font-size: 13px;
+    }
+
+    .form-tamu-card-body {
+        padding: 14px;
+    }
+
+    .form-tamu-actions {
+        flex-direction: column;
+    }
+
+    .form-tamu-actions .btn {
+        width: 100%;
+    }
+}
